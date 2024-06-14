@@ -37,40 +37,69 @@ function loco() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 }
-loco()
-
+loco();
 
 gsap.to("#page>video", {
-    scrollTrigger:{
-        trigger: `#page`,
-        start: `2% top`,
-        end: `bottom top`,
-        // markers: true,
-        scroller: `#main`
-    },
-    onStart:()=>{
-        document.querySelector("#page>video").play()
-    }
-})
+  scrollTrigger: {
+    trigger: `#page`,
+    start: `2% top`,
+    end: `bottom top`,
+    // markers: true,
+    scroller: `#main`,
+  },
+  onStart: () => {
+    document.querySelector("#page>video").play();
+  },
+});
 
-gsap.to("#page",{
-    scrollTrigger:{
-        trigger:`#page`,
-        start:`top top`,
-        end:`bottom top`,
-        scroller:`#main`,
-        pin:true
-    }
-})
+gsap.to("#page", {
+  scrollTrigger: {
+    trigger: `#page`,
+    start: `top top`,
+    end: `bottom top`,
+    scroller: `#main`,
+    pin: true,
+  },
+});
 
 gsap.to("#page-bottom", {
-    scrollTrigger:{
-        trigger:`#page-bottom`,
-        start:`5% top`,
-        end:`bottom top`,
-        scroller:`#main`,
-        scrub:.5,
-        // markers: true
-    },
-    opacity:0
-})
+  scrollTrigger: {
+    trigger: `#page-bottom`,
+    start: `5% top`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.5,
+    // markers: true
+  },
+  opacity: 0,
+});
+
+var t1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `#page1`,
+    start: `top top`,
+    scrub: 1,
+    scroller: `#main`,
+    // markers: true,
+    pin: true,
+  },
+});
+
+t1.to("#page1>h1", {
+  top: `-50%`,
+});
+
+var t2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `#page2`,
+    start: `top top`,
+    scrub: 1,
+    scroller: `#main`,
+    // markers: true,
+    pin: true,
+  },
+});
+
+t2.to("#page2>h1", {
+  top: `-50%`,
+});

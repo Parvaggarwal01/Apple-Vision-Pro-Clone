@@ -17,7 +17,7 @@ body{
 }
 
 #page{
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -25,20 +25,23 @@ body{
 
 #page>nav{
     height: 5vh;
-    width: 50%;
-    position: absolute;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
     /* background-color: white; */
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #page>nav>h3{
     justify-content: space-between;
     color: white;
     font-weight: 400;
+    align-items: center;
 }
 
 #page>video{
@@ -96,5 +99,93 @@ body{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: burlywood;
+    /* background-color: burlywood; */
+}
+
+#page1>h1{
+    font-size: 4vw;
+    color: white;
+    position: absolute;
+    font-weight: 600;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: burlywood; */
+}
+
+#page2>h1{
+    font-size: 4vw;
+    color: rgb(11, 11, 11);
+    position: absolute;
+    font-weight: 600;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#page2>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#page3>img{
+    width: 74%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page3-upper{
+    height: 30%;
+    width: 35%;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+
+#page3-upper>img{
+    position: absolute;
+    width: 57%;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page3>button{
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 35px;
+    border: 3px solid black;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 1.5vw;
 }
