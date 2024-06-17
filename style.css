@@ -135,6 +135,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+    text-align: center;
 }
 
 #page2>video{
@@ -211,4 +212,60 @@ body{
     text-align: center;
     color: white;
     font-size: 2vw;
+}
+
+#page5{
+    display: flex;
+     position: relative;
+     height: 70vh;
+     width: 100vw;
+     /* background-color: wheat;  */
+}
+
+#left5{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    /* background-color: violet; */
+}
+
+#right5{
+    position: relative;
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    /* background-color: palevioletred; */
+    margin-top: 5.1vw;
+}
+
+#left5>h1{
+    font-size: 2.3vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+
+#right5>h3{
+    /* position: absolute; */
+    font-size: 1.3vw;
+    width: 80%;
+    color: #86868B;
+    top: 15%;
+    line-height: 1.4;
+}
+
+#right5>button{
+    /* position: absolute; */
+    padding: 15px 25px;
+    font-size: 1.5vw;
+    border: none;
+    background-color: #FF5A00;
+    color: #FFFFFF;
+    border-radius: 50px;
+    /* bottom: 13%; */
+    margin-top: 1.5vw;
 }
