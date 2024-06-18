@@ -269,3 +269,31 @@ body{
     /* bottom: 13%; */
     margin-top: 1.5vw;
 }
+
+#page6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#page6>h3{
+    margin-bottom: 1vw ;
+    font-size: 1.6vw;
+}
+
+#page6>h1{
+    margin-bottom: 4vw;
+    font-size: 5vw;
+}
+
+#page6>p{
+    font-size: 1.5vw;
+    width: 48%;
+    color: #86868B;
+}
