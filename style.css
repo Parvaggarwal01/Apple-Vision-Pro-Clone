@@ -309,4 +309,143 @@ body{
     position: relative;
     max-width: 100vw;
     max-height: 100vh;
+    z-index: 99;
 }
+
+#page8{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7 ;
+}
+
+#page8>h1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10% ;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #86868B; 
+    z-index: 99;
+}
+ 
+#page8>h1>span{
+    color: black;
+}
+
+#page9{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#page9>h1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10% ;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #86868B; 
+    z-index: 99;
+}
+ 
+#page9>h1>span{
+    color: black;
+}
+
+#page10{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#page10>h1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10% ;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #86868B; 
+    z-index: 99;
+}
+ 
+#page10>h1>span{
+    color: black;
+}
+
+#page11{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#page11>h1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10% ;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #86868B; 
+    z-index: 99;
+}
+ 
+#page11>h1>span{
+    color: black;
+}  
+
+#page12{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#page12>h1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10% ;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #86868B; 
+    z-index: 99;
+}
+ 
+#page12>h1>span{
+    color: black;
+}
+
+#page13{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#page13>h1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10% ;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #86868B; 
+    z-index: 99;
+}
+ 
+#page13>h1>span{
+    color: black;
+} 
