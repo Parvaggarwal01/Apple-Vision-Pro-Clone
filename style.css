@@ -618,3 +618,40 @@ body{
 #page19>h5>span{
     color: white;
 }
+
+#page20{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+#page20>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#center-page20{
+    position: absolute;
+    /* background-color: #FF5A00; */
+    right: 5%;
+    bottom: 1%;
+    text-align: start;
+    width: 30%;
+}
+
+#center-page20>h1{
+    font-size: 2vw;
+    color: #fff;
+}
+
+#center-page20>p{
+    text-align: start;
+    font-size: 1.5vw;
+    color: #86868B;
+}
+
+#center-page20>p>span{
+    color: #fff;
+}
