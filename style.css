@@ -496,3 +496,46 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+#page16{
+    position: relative;
+    height: 164vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#page16>h2{
+    position: absolute;
+    width: 42%;
+    color: #86868B;
+    font-weight: 550;
+    top: 11%;
+    line-height: 1.4;
+    font-size: 1.42vw;
+}
+
+#page16>h2>span{
+    color: black;
+}
+
+#page16>img{
+    position: absolute;
+    width: 74%;
+    bottom: 0%;
+}
+
+#page16>button{
+    position: absolute;
+    bottom: 9%;
+    padding: 18px 45px;
+    font-size: 1.5vw;
+    border-radius: 50px;
+   background-color: #FF5A00;
+   color: white;
+   border: none;
+   font-size: 1.3vw;
+}
