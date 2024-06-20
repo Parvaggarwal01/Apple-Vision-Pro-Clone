@@ -546,3 +546,14 @@ var t5 = gsap.timeline({
 t5.to("#senoff", {
   opacity:0,
 });
+
+gsap.to("#page25>img",{
+  scrollTrigger:{
+    trigger:`#page25>img`,
+    start:`top bottom`,
+    end:`bottom 60%`,
+    scrub:.5,
+    scroller:`#main`
+  },
+  opacity:1
+})

@@ -220,7 +220,7 @@ body {
   position: relative;
   height: 70vh;
   width: 100vw;
-  background-color: white; 
+  background-color: white;
 }
 
 #left5 {
@@ -760,3 +760,21 @@ body {
 #page24 > h3 > span {
   color: #fff;
 }
+
+#page25 {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+#page25>img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    position: absolute;
+    z-index: 99;
+    object-fit: cover;
+    opacity: 0;
+  }
