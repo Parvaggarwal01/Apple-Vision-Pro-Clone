@@ -516,3 +516,33 @@ end: `80% top`,
 });
 }
 canvas1();
+
+var t4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `#page21`,
+    start: `top top`,
+    scrub: 1,
+    scroller: `#main`,
+    // markers: true,
+    pin: true,
+  },
+});
+
+t4.to("#off", {
+  opacity:0,
+});
+
+var t5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `#page23`,
+    start: `top top`,
+    scrub: 1,
+    scroller: `#main`,
+    // markers: true,
+    pin: true,
+  },
+});
+
+t5.to("#senoff", {
+  opacity:0,
+});

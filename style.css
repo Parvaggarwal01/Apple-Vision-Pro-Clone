@@ -1,657 +1,735 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'San Francisco', Helvetica, Arial, san-serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "San Francisco", Helvetica, Arial, san-serif;
+  /* background-color: #000; */
 }
 
 html,
-body{
-    height: 100%;
-    width: 100%;
-}
-
-#main{
-    position: relative;
-    overflow: hidden;
-}
-
-#page{
-    /* position: relative; */
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-}
-
-#page>nav{
-    height: 5vh;
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
-    /* background-color: white; */
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#page>nav>h3{
-    justify-content: space-between;
-    color: white;
-    font-weight: 400;
-    align-items: center;
-}
-
-#page>video{
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#book{
-    margin-left: 400px;
-    border-radius: 50px;
-    padding: 5px;
-    background-color: white;
-    border: none;
-
-}
-#buy{
-    margin-left: 30px;
-    border-radius: 50px;
-    padding: 5px 10px;
-    background-color: #0171E2;
-    color: white;
-    border: none;
-}
-
-#page-bottom{
-    height: 20%;
-    width: 25%;
-    /* background-color: green; */
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#page-bottom>img{
-    height: 30%;
-}
-
-#page-bottom>h3{
-    color: #FF5A00;
-    font-size: 1.6vw;
-    font-weight: 400;
-    line-height: 35px;
-}
-
-#page1{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    /* background-color: burlywood; */
-}
-
-#page1>h1{
-    font-size: 4vw;
-    color: white;
-    position: absolute;
-    font-weight: 600;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
-
-#page1>video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#page2{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    /* background-color: burlywood; */
-}
-
-#page2>h1{
-    font-size: 4vw;
-    color: rgb(11, 11, 11);
-    position: absolute;
-    font-weight: 600;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    text-align: center;
-}
-
-#page2>video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#page3{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-}
-
-#page3>img{
-    width: 74%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#page3-upper{
-    height: 30%;
-    width: 35%;
-    /* background-color: yellowgreen; */
-    position: absolute;
-    z-index: 9;
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
-}
-
-#page3-upper>img{
-    position: absolute;
-    width: 57%;
-    top: 27%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#page3>button{
-    position: absolute;
-    bottom: 7%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px 35px;
-    border: 3px solid black;
-    font-weight: 500;
-    background-color: white;
-    border-radius: 50px;
-    font-size: 1.5vw;
-}
-
-#page4{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    /* background-color: burlywood; */
-}
-
-#page4>video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#center-page4{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    font-size: 2vw;
-}
-
-#page5{
-    display: flex;
-     position: relative;
-     height: 70vh;
-     width: 100vw;
-     /* background-color: wheat;  */
-}
-
-#left5{
-    position: relative;
-    height: 100%;
-    width: 50%;
-    /* background-color: violet; */
-}
-
-#right5{
-    position: relative;
-    display: flex;
-    align-items: start;
-    /* justify-content: center; */
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
-    /* background-color: palevioletred; */
-    margin-top: 5.1vw;
-}
-
-#left5>h1{
-    font-size: 2.3vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15%;
-}
-
-#right5>h3{
-    /* position: absolute; */
-    font-size: 1.3vw;
-    width: 80%;
-    color: #86868B;
-    top: 15%;
-    line-height: 1.4;
-}
-
-#right5>button{
-    /* position: absolute; */
-    padding: 15px 25px;
-    font-size: 1.5vw;
-    border: none;
-    background-color: #FF5A00;
-    color: #FFFFFF;
-    border-radius: 50px;
-    /* bottom: 13%; */
-    margin-top: 1.5vw;
-}
-
-#page6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    height: 70vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page6>h3{
-    margin-bottom: 1vw ;
-    font-size: 1.6vw;
-}
-
-#page6>h1{
-    margin-bottom: 4vw;
-    font-size: 5vw;
-}
-
-#page6>p{
-    font-size: 1.5vw;
-    width: 48%;
-    color: #86868B;
-}
-
-#page7{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page7>canvas{
-    position: relative;
-    max-width: 100vw;
-    max-height: 100vh;
-    z-index: 99;
-}
-
-#page8{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7 ;
-}
-
-#page8>h1{
-    position: absolute;
-    width: 18%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10% ;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: #86868B; 
-    z-index: 99;
-}
- 
-#page8>h1>span{
-    color: black;
-}
-
-#page9{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page9>h1{
-    position: absolute;
-    width: 18%;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10% ;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: #86868B; 
-    z-index: 99;
-}
- 
-#page9>h1>span{
-    color: black;
-}
-
-#page10{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page10>h1{
-    position: absolute;
-    width: 18%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10% ;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: #86868B; 
-    z-index: 99;
-}
- 
-#page10>h1>span{
-    color: black;
-}
-
-#page11{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page11>h1{
-    position: absolute;
-    width: 18%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10% ;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: #86868B; 
-    z-index: 99;
-}
- 
-#page11>h1>span{
-    color: black;
-}  
-
-#page12{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page12>h1{
-    position: absolute;
-    width: 18%;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10% ;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: #86868B; 
-    z-index: 99;
-}
- 
-#page12>h1>span{
-    color: black;
-}
-
-#page13{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #F5F5F7;
-}
-
-#page13>h1{
-    position: absolute;
-    width: 18%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10% ;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: #86868B; 
-    z-index: 99;
-}
- 
-#page13>h1>span{
-    color: black;
-} 
-
-#page14{
-    display: flex;
-    align-items: center;
-    justify-content: space-around ;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-}
-
-#left14{
-    height: 90%;
-    width: 45%;
-    position: relative;
-    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_top__k3b8lzqd1l2m_large.jpg);
-    background-size: cover;
-}
-
-#right14{
-    height: 90%;
-    width: 45%;
-    position: relative;
-    background-image: url(https://www.apple.com/v/apple-vision-pro/e/images/overview/design/glass_side__gm4agomrwl2e_medium_2x.jpg);
-    background-size: cover;
-}
-
-#page15{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#center-page15{
-    height: 90%;
-    width: 95%;
-    position: relative;
-}
-
-#center-page15>video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#page16{
-    position: relative;
-    height: 164vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-#page16>h2{
-    position: absolute;
-    width: 42%;
-    color: #86868B;
-    font-weight: 550;
-    top: 11%;
-    line-height: 1.4;
-    font-size: 1.42vw;
-}
-
-#page16>h2>span{
-    color: black;
-}
-
-#page16>img{
-    position: absolute;
-    width: 74%;
-    bottom: 0%;
-}
-
-#page16>button{
-    position: absolute;
-    bottom: 11%;
-    padding: 18px 45px;
-    font-size: 1.5vw;
-    border-radius: 50px;
-   background-color: #FF5A00;
-   color: white;
-   border: none;
-   font-size: 1.3vw;
-}
-
-#page17{
-    position: relative;
-    height: 90vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #000;
-    color: #fff;
-}
-#page17>h4{
-    font-size: 1.5vw;
-    font-weight: 500;
-    margin-bottom: 2vw;
-}
-#page17>h1{
-    font-size: 5vw;
-    line-height: 1;
-    font-weight: 700;
-    margin-bottom: 3vw;
-}
-#page17>p{
-    font-size: 1.6vw;
-    font-weight: 500;
-    margin-bottom: 2vw;
-    color: #ffffff7c;
-    width: 42%;
-    text-align: center;
-}
-#page17>p>span{
-    color: #fff;
-}
-
-#page18{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    top: 0%;
-}
-
-#page18>canvas{
-    position: relative;
-    max-width: 100vw;
-    max-height: 100vw;
-}
-
-#page19{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    position: relative;
-    height: 30vh;
-    width: 100vw;
-    background-color: #000;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.5vw;
-    top: 0%;
-}
-
-#page19>h1{
-    font-size: 2vw;
-}
-
-#page19>h5{
-    font-size: 1.4vw;
-    font-weight: 500;
-    margin-bottom: 2vw;
-    color: #ffffff7c;
-    width: 42%;
-    text-align: center;
-}
-
-#page19>h5>span{
-    color: white;
-}
-
-#page20{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-}
-
-#page20>video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#center-page20{
-    position: absolute;
-    /* background-color: #FF5A00; */
-    right: 5%;
-    bottom: 1%;
-    text-align: start;
-    width: 30%;
-}
-
-#center-page20>h1{
-    font-size: 2vw;
-    color: #fff;
-}
-
-#center-page20>p{
-    text-align: start;
-    font-size: 1.5vw;
-    color: #86868B;
-}
-
-#center-page20>p>span{
-    color: #fff;
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+
+#page {
+  /* position: relative; */
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#page > nav {
+  height: 5vh;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  /* background-color: white; */
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page > nav > h3 {
+  justify-content: space-between;
+  color: white;
+  font-weight: 400;
+  align-items: center;
+}
+
+#page > video {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#book {
+  margin-left: 400px;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: white;
+  border: none;
+}
+#buy {
+  margin-left: 30px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #0171e2;
+  color: white;
+  border: none;
+}
+
+#page-bottom {
+  height: 20%;
+  width: 25%;
+  /* background-color: green; */
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page-bottom > img {
+  height: 30%;
+}
+
+#page-bottom > h3 {
+  color: #ff5a00;
+  font-size: 1.6vw;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: burlywood; */
+}
+
+#page1 > h1 {
+  font-size: 4vw;
+  color: white;
+  position: absolute;
+  font-weight: 600;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+#page1 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: burlywood; */
+}
+
+#page2 > h1 {
+  font-size: 4vw;
+  color: rgb(11, 11, 11);
+  position: absolute;
+  font-weight: 600;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+
+#page2 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+#page3 > img {
+  width: 74%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page3-upper {
+  height: 30%;
+  width: 35%;
+  /* background-color: yellowgreen; */
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+
+#page3-upper > img {
+  position: absolute;
+  width: 57%;
+  top: 27%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page3 > button {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 35px;
+  border: 3px solid black;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 1.5vw;
+}
+
+#page4 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: burlywood; */
+}
+
+#page4 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#center-page4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+
+#page5 {
+  display: flex;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  /* background-color: wheat;  */
+}
+
+#left5 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  /* background-color: violet; */
+}
+
+#right5 {
+  position: relative;
+  display: flex;
+  align-items: start;
+  /* justify-content: center; */
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  /* background-color: palevioletred; */
+  margin-top: 5.1vw;
+}
+
+#left5 > h1 {
+  font-size: 2.3vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+}
+
+#right5 > h3 {
+  /* position: absolute; */
+  font-size: 1.3vw;
+  width: 80%;
+  color: #86868b;
+  top: 15%;
+  line-height: 1.4;
+}
+
+#right5 > button {
+  /* position: absolute; */
+  padding: 15px 25px;
+  font-size: 1.5vw;
+  border: none;
+  background-color: #ff5a00;
+  color: #ffffff;
+  border-radius: 50px;
+  /* bottom: 13%; */
+  margin-top: 1.5vw;
+}
+
+#page6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page6 > h3 {
+  margin-bottom: 1vw;
+  font-size: 1.6vw;
+}
+
+#page6 > h1 {
+  margin-bottom: 4vw;
+  font-size: 5vw;
+}
+
+#page6 > p {
+  font-size: 1.5vw;
+  width: 48%;
+  color: #86868b;
+}
+
+#page7 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page7 > canvas {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 99;
+}
+
+#page8 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page8 > h1 {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #86868b;
+  z-index: 99;
+}
+
+#page8 > h1 > span {
+  color: black;
+}
+
+#page9 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page9 > h1 {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #86868b;
+  z-index: 99;
+}
+
+#page9 > h1 > span {
+  color: black;
+}
+
+#page10 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page10 > h1 {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #86868b;
+  z-index: 99;
+}
+
+#page10 > h1 > span {
+  color: black;
+}
+
+#page11 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page11 > h1 {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #86868b;
+  z-index: 99;
+}
+
+#page11 > h1 > span {
+  color: black;
+}
+
+#page12 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page12 > h1 {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #86868b;
+  z-index: 99;
+}
+
+#page12 > h1 > span {
+  color: black;
+}
+
+#page13 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+#page13 > h1 {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #86868b;
+  z-index: 99;
+}
+
+#page13 > h1 > span {
+  color: black;
+}
+
+#page14 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+#left14 {
+  height: 90%;
+  width: 45%;
+  position: relative;
+  background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_top__k3b8lzqd1l2m_large.jpg);
+  background-size: cover;
+}
+
+#right14 {
+  height: 90%;
+  width: 45%;
+  position: relative;
+  background-image: url(https://www.apple.com/v/apple-vision-pro/e/images/overview/design/glass_side__gm4agomrwl2e_medium_2x.jpg);
+  background-size: cover;
+}
+
+#page15 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+#center-page15 {
+  height: 90%;
+  width: 95%;
+  position: relative;
+}
+
+#center-page15 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page16 {
+  position: relative;
+  height: 164vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+}
+
+#page16 > h2 {
+  position: absolute;
+  width: 42%;
+  color: #86868b;
+  font-weight: 550;
+  top: 11%;
+  line-height: 1.4;
+  font-size: 1.42vw;
+}
+
+#page16 > h2 > span {
+  color: black;
+}
+
+#page16 > img {
+  position: absolute;
+  width: 74%;
+  bottom: 0%;
+}
+
+#page16 > button {
+  position: absolute;
+  bottom: 11%;
+  padding: 18px 45px;
+  font-size: 1.5vw;
+  border-radius: 50px;
+  background-color: #ff5a00;
+  color: white;
+  border: none;
+  font-size: 1.3vw;
+}
+
+#page17 {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+#page17 > h4 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+}
+#page17 > h1 {
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 3vw;
+}
+#page17 > p {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+  color: #ffffff7c;
+  width: 42%;
+  text-align: center;
+}
+#page17 > p > span {
+  color: #fff;
+}
+
+#page18 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+}
+
+#page18 > canvas {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vw;
+}
+
+#page19 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  height: 30vh;
+  width: 100vw;
+  background-color: #000;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5vw;
+  top: 0%;
+}
+
+#page19 > h1 {
+  font-size: 2vw;
+}
+
+#page19 > h5 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+  color: #ffffff7c;
+  width: 42%;
+  text-align: center;
+}
+
+#page19 > h5 > span {
+  color: white;
+}
+
+#page20 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+#page20 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#center-page20 {
+  position: absolute;
+  /* background-color: #FF5A00; */
+  right: 5%;
+  bottom: 1%;
+  text-align: start;
+  width: 30%;
+}
+
+#center-page20 > h1 {
+  font-size: 2vw;
+  color: #fff;
+}
+
+#center-page20 > p {
+  text-align: start;
+  font-size: 1.5vw;
+  color: #86868b;
+}
+
+#center-page20 > p > span {
+  color: #fff;
+}
+
+#page21 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+#off {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66%;
+  position: absolute;
+  z-index: 99;
+}
+
+#on {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66%;
+  position: absolute;
+}
+
+#page22 {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 100vw;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#page22 > h1 {
+  top: 0%;
+  color: #fff;
+}
+#page22 > h3 {
+  color: #86868b;
+  width: 42%;
+  line-height: 1.5;
+  font-size: 1.3vw;
+}
+
+#page22 > h3 > span {
+  color: #fff;
+}
+
+#page23 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+#senoff {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  position: absolute;
+  z-index: 99;
+}
+
+#senon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  position: absolute;
 }
