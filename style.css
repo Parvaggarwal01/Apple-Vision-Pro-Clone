@@ -220,7 +220,7 @@ body {
   position: relative;
   height: 70vh;
   width: 100vw;
-  /* background-color: wheat;  */
+  background-color: white; 
 }
 
 #left5 {
@@ -732,4 +732,31 @@ body {
   transform: translate(-50%, -50%);
   width: 70%;
   position: absolute;
+}
+
+#page24 {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 100vw;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#page24 > h1 {
+  top: 0%;
+  color: #fff;
+}
+#page24 > h3 {
+  color: #86868b;
+  width: 42%;
+  line-height: 1.5;
+  font-size: 1.3vw;
+}
+
+#page24 > h3 > span {
+  color: #fff;
 }
